@@ -213,6 +213,7 @@ const SwapInputGroup = ({
         {unit ? (
           <>
             <InputCurrency
+              id="swap-form-to-amount"
               error={error}
               disabled
               key={unit.code}
@@ -222,7 +223,7 @@ const SwapInputGroup = ({
               onChange={() => undefined}
             />
             {rate && fromCurrency && currency ? (
-              <Box horizontal mt={1} alignItems={"center"}>
+              <Box horizontal mt={1} alignItems={"center"} id="swap-form-price">
                 <Box mr={1}>
                   <IconLock size={10} color={lockColor} />
                 </Box>

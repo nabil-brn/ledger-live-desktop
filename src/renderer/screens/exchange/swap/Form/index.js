@@ -224,7 +224,7 @@ const Form = ({
   return (
     <>
       <TrackPage category="Swap" name="Form" />
-      <Card flow={1}>
+      <Card flow={1} id="swap-form">
         <Box horizontal p={32}>
           <From
             status={status}

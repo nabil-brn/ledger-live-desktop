@@ -197,6 +197,7 @@ const From = ({
             {currency && amount?.gt(0) && !amountError ? (
               <CountervalueWrapper mt={1}>
                 <CounterValue
+                  id="swap-form-countervalue"
                   prefix={<Text mr={1}>{"≈"}</Text>}
                   currency={currency}
                   value={amount}

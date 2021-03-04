@@ -39,7 +39,7 @@ const Exchange = () => {
   const Component = tabs[activeTabIndex].component;
 
   return (
-    <Container pb={6} selectable>
+    <Container pb={6} selectable id="swap-container">
       <Box ff="Inter|SemiBold" fontSize={7} color="palette.text.shade100" id="exchange-title">
         {t("exchange.title")}
       </Box>
@@ -48,7 +48,7 @@ const Exchange = () => {
         tabs={tabs.map(tab => t(tab.title))}
         onIndexChange={setActiveTabIndex}
       />
-      <Card grow style={{ overflow: "hidden" }}>
+      <Card grow style={{ overflow: "hidden" }} id="swap-form">
         <Component {...location?.state} />
       </Card>
     </Container>

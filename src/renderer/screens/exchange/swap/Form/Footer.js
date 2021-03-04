@@ -57,7 +57,7 @@ const Footer = ({
       />
       <Box horizontal>
         {ratesExpiration ? (
-          <CountdownTimerWrapper horizontal>
+          <CountdownTimerWrapper horizontal id="swap-form-countdown">
             <Box mr={1}>
               <IconClock size={14} />
             </Box>
