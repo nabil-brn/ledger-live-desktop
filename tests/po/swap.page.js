@@ -49,15 +49,15 @@ export default class SwapPage extends Page {
     return this.$("#swap-form-countdown");
   }
 
-  async continueButton() {
-    return this.$("#swap-form-continue-button");
+  async exchangeButton() {
+    return this.$("#swap-form-exchange-button");
   }
 
   async summaryProviderCheckbox() {
     return this.$("#swap-modal-summary-provider-tos-checkbox");
   }
 
-  async confirmationStep() {
+  async deviceConfirmationStep() {
     return this.$("#swap-modal-device-confirm");
   }
 
@@ -65,8 +65,8 @@ export default class SwapPage extends Page {
     return this.$("#swap-modal-finished-close-button");
   }
 
-  async summaryContinueButton() {
-    return this.$("#swap-modal-summary-continue-button");
+  async summaryConfirmButton() {
+    return this.$("#swap-modal-summary-confirm-button");
   }
 
   async firstRow() {

@@ -13,6 +13,7 @@ import PortfolioPage from "./po/portfolio.page";
 import SettingsPage from "./po/settings.page";
 import SwapPage from "./po/swap.page";
 import ManagerPage from "./po/manager.page";
+import DevicePage from "./po/device.page";
 import AddAccountModal from "./po/addAccountModal.page";
 import AccountSettingsModal from "./po/accountSettingsModal.page";
 import ExportOperationsModal from "./po/exportOperationsHistoryModal.page";
@@ -55,6 +56,7 @@ let settingsPage;
 let swapPage;
 let managerPage;
 let modalPage;
+let devicePage;
 let accountPage;
 let accountsPage;
 let addAccountsModal;
@@ -137,6 +139,7 @@ export default function initialize(name, { userData, env = {}, disableStartSnap 
     settingsPage = new SettingsPage(app);
     swapPage = new SwapPage(app);
     managerPage = new ManagerPage(app);
+    devicePage = new DevicePage(app);
     addAccountsModal = new AddAccountModal(app);
     accountSettingsModal = new AccountSettingsModal(app);
     exportOperationsHistoryModal = new ExportOperationsModal(app);
@@ -236,6 +239,7 @@ export {
   swapPage,
   managerPage,
   modalPage,
+  devicePage,
   hideTokenModal,
   addAccountsModal,
   accountSettingsModal,

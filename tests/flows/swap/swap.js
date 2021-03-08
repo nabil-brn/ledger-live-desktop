@@ -39,8 +39,8 @@ const swap = o => {
       });
 
       it("continue button should be enabled", async () => {
-        const continueButton = await swapPage.continueButton();
-        expect(await continueButton.waitForEnabled()).toBe(true);
+        const exchangeButton = await swapPage.exchangeButton();
+        expect(await exchangeButton.waitForEnabled()).toBe(true);
       });
 
       it("should display the amount to receive", async () => {
@@ -73,9 +73,9 @@ const swap = o => {
         await toAccount.setValue(o.toAccount);
         await app.client.keys(["Enter"]);
 
-        const continueButton = await swapPage.continueButton();
-        expect(await continueButton.waitForEnabled({ reverse: true })).toBe(true);
-        expect(await continueButton.waitForEnabled()).toBe(true);
+        const exchangeButton = await swapPage.exchangeButton();
+        expect(await exchangeButton.waitForEnabled({ reverse: true })).toBe(true);
+        expect(await exchangeButton.waitForEnabled()).toBe(true);
       });
 
       it("should refresh the countdown", async () => {
